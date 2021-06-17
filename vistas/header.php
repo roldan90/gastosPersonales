@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../public/bootstrap4/bootstrap.min.css">
     <link rel="stylesheet" href="../public/fontawesome5.15.3/css/all.css">
+    <link rel="stylesheet" href="../public/datatable/dataTables.bootstrap4.min.css">
     <title>Gastos personales</title>
     </head>
     <body>

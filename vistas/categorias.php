@@ -17,7 +17,10 @@
 </div>
 
 
-<?php include "categorias/modalAgregar.php"; ?>
+<?php 
+    include "categorias/modalAgregar.php";
+    include "categorias/modalActualizar.php"; 
+?>
 
 <?php include "footer.php"; ?>
 <script src="../public/js/categorias.js"></script>
