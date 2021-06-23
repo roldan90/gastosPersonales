@@ -1,4 +1,8 @@
-<?php include "header.php"; ?>
+<?php
+    session_start();
+    if (isset($_SESSION['usuario'])) {
+        include "header.php"; 
+?>
 
 <div class="container">
     <h1>Administracion de gastos</h1>
@@ -22,3 +26,10 @@
 
 <?php include "footer.php"; ?>
 <script src="../public/js/gastos.js"></script>
+
+
+<?php 
+    } else {
+        header("location:../index.php");
+    }
+?>

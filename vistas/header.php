@@ -37,6 +37,17 @@
                     <span class="far fa-money-bill-alt"></span> Gastos
                     </a>
                 </li>
+
+                <li class="nav-item dropdown">
+                    <a style="color:red" class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Usuario: <?php echo $_SESSION['usuario']; ?>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../procesos/login/salir.php">
+                        <span class="fas fa-sign-out-alt"></span> Salir
+                    </a>
+                    </div>
+                </li>
             </ul>
             </div>
         </div>

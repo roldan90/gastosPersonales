@@ -1,11 +1,17 @@
-
-
-<?php include "header.php"; ?>
+<?php
+    session_start();
+    if (isset($_SESSION['usuario'])) {
+        include "header.php"; 
+?>
 
 <div class="container">
 <h1 class="mt-4">Logo Nav by Start Bootstrap</h1>
 <p>The logo in the navbar is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML or with CSS. For best results, use an SVG image as your logo.</p>
 </div>
 
-
-<?php include "footer.php"; ?>
+<?php 
+        include "footer.php";
+    } else {
+        header("location:../index.php");
+    }
+?>

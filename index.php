@@ -22,14 +22,11 @@
                         <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email address" required autofocus>
                         <label for="inputEmail">Email address</label>
                     </div>
-
                     <div class="form-label-group">
                         <input type="password" id="inputPassword" name="inputPassword" class="form-control" placeholder="Password" required>
                         <label for="inputPassword">Password</label>
                     </div>
-
-                    
-                    <button id="btnEntrarSistema" class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">Entrar</button>
+                    <button id="btnEntrarSistema" class="btn btn-lg btn-primary btn-block text-uppercase">Entrar</button>
                     <a href="registro.php" id="btnEntrarSistema" class="btn btn-lg btn-danger btn-block text-uppercase">Registrarse</a>
                     <hr class="my-4">
                     </form>
@@ -43,5 +40,7 @@
     <script src="public/bootstrap4/jquery-3.6.0.min.js"></script>
     <script src="public/bootstrap4/popper.min.js"></script>
     <script src="public/bootstrap4/bootstrap.min.js"></script>
+    <script src="public/sweetalert/sweetalert.min.js"></script>
+    <script src="public/js/registro.js"></script>
   </body>
 </html>

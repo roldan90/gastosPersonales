@@ -1,4 +1,8 @@
-<?php include "header.php"; ?>
+<?php
+    session_start();
+    if (isset($_SESSION['usuario'])) {
+        include "header.php"; 
+?>
 
 <div class="container">
 <h2>Administrar categorias de gastos</h2>
@@ -24,3 +28,9 @@
 
 <?php include "footer.php"; ?>
 <script src="../public/js/categorias.js"></script>
+
+<?php 
+    } else {
+        header("location:../index.php");
+    }
+?>

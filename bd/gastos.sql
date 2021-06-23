@@ -28,6 +28,14 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `t_categorias`
 --
 
+CREATE TABLE `ronald`.`t_usuarios` (
+  `id_usuario` INT NOT NULL AUTO_INCREMENT,
+  `nombre` VARCHAR(245) NOT NULL,
+  `email` VARCHAR(245) NOT NULL,
+  `password` VARCHAR(245) NOT NULL,
+  PRIMARY KEY (`id_usuario`));
+
+
 CREATE TABLE `t_categorias` (
   `id_categoria` int(11) NOT NULL,
   `nombre` text NOT NULL
