@@ -10,7 +10,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form method="POST" onsubmit="return agregarCategoria()">
+        <form method="POST" id="frmAgregarCategoria" onsubmit="return agregarCategoria()">
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre" class="form-control" required>
             <br>

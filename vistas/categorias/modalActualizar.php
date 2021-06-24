@@ -11,8 +11,9 @@
       </div>
       <div class="modal-body">
         <form method="POST" onsubmit="return actualizaCategoria()" id="frmActualizaCategoria">
+            <input type="text" name="idCategoria" id="idCategoria" hidden>
             <label for="nombreu">Nombre</label>
-            <input type="text" id="nombreu" name="nombreu" class="form-control" required>
+            <input type="text" name="nombreu" id="nombreu" class="form-control" required>
             <br>
             <button class="btn btn-warning">Actualizar</button>
         </form>
