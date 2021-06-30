@@ -54,3 +54,40 @@ function eliminarGasto(idGasto) {
 
     return false;
 }
+
+function obtenerDatosGasto(idGasto) {
+
+    $.ajax({
+        type:"POST",
+        data:"idGasto=" + idGasto,
+        url:"../procesos/gastos/obtenerDatosGasto.php",
+        success:function(respuesta) {
+            respuesta = jQuery.parseJSON(respuesta);
+
+            $('#nombreGastou').val(respuesta['nombre']);
+            $('#montou').val(respuesta['monto']);
+            $('#idGastou').val(respuesta['id_gasto']);
+
+            $('#cargaCategoriasUpdate').load("categorias/cargaCategorias.php?idCategoria=" + respuesta['id_categoria']);
+        }
+    });
+
+}
+
+function actualizarGasto() {
+    $.ajax({
+        type:"POST",
+        data:$('#frmActualizarGasto').serialize(),
+        url:"../procesos/gastos/actualizarGasto.php",
+        success:function(respuesta) {
+            if (respuesta == 1) {
+                $('#cargaTablaGastos').load('gastos/tablaGastos.php');
+                swal(":D","Se actualizo con exito!","success");
+            } else {
+                swal(":(","No se pudo actualizar" + respuesta, "error");
+            }
+        }
+    });
+
+    return false;
+}

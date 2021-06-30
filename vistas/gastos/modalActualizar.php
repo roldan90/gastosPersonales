@@ -9,7 +9,8 @@
             </button>
         </div>
         <div class="modal-body">
-            <form action="post" id="frmAgregarGasto" onsubmit="return agregarGasto()">
+            <form action="post" id="frmActualizarGasto" onsubmit="return actualizarGasto()">
+                <input type="text" hidden name="idGastou" id="idGastou">
                 <div id="cargaCategoriasUpdate"></div>
                 <label for="nombreGastou">Nombre</label>
                 <input type="text" id="nombreGastou" name="nombreGastou" class="form-control" required>

@@ -39,7 +39,9 @@
                 <td><?php echo "$" . $ver['monto']; ?></td>
                 <td><?php echo $ver['fecha']; ?></td>
                 <td>
-                    <span class="btn btn-warning" data-toggle="modal" data-target="#modalActualizarGasto">
+                    <span class="btn btn-warning" 
+                        data-toggle="modal" 
+                        data-target="#modalActualizarGasto" onclick="obtenerDatosGasto('<?php echo $ver['idGasto'] ?>')">
                         <span class="fas fa-edit"></span>
                     </span>
                 </td>

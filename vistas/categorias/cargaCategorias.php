@@ -20,11 +20,9 @@
         while($ver = mysqli_fetch_array($respuesta)){
             $cadena = $cadena . '<option value="' . $ver['id_categoria'] . '">' . $ver['nombre'] . '</option>';
         }
-
         $controlCompuesto = $cadena . '</select>';
     } else if ($tipoOrden == "update") {
         $cadena = '<select id="id_categoriau" name="id_categoriau" class="form-control">';
-
         while($ver = mysqli_fetch_array($respuesta)){
             if ($ver['id_categoria'] == $_GET['idCategoria']) {
                 $cadena = $cadena . '<option selected value="' . $ver['id_categoria'] . '">' . $ver['nombre'] . '</option>';
@@ -32,7 +30,6 @@
                 $cadena = $cadena . '<option value="' . $ver['id_categoria'] . '">' . $ver['nombre'] . '</option>';
             }
         }
-
         $controlCompuesto = $cadena . '</select>';
     }
     
